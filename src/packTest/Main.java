@@ -7,18 +7,25 @@ import java.util.Scanner;
 import packWork.*;
 
 public class Main {
-	public static void main(String[] args) throws IOException, InterruptedException {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Introduceti adresa fisierului de intrare .bmp: (Fara Ghilimele)");
-		String inputFile = sc.nextLine();
-		
-		System.out.println("Introduceti numele fisierului output sau si adresa daca nu vreti sa se salveze in acelasi loc: ");
-		String fileName = sc.nextLine();
-	
-		sc.close();
-		
+	public static void main(String[] args) throws IOException {
+
+		String inputFile;
+		String fileName;
+		if(args.length == 0){
+			Scanner sc = new Scanner(System.in);
+
+			System.out.println("Introduceti adresa fisierului de intrare .bmp: (Fara Ghilimele)");
+			inputFile = sc.nextLine();
+
+			System.out.println("Introduceti numele fisierului output sau si adresa daca nu vreti sa se salveze in acelasi loc: ");
+			fileName = sc.nextLine();
+
+			sc.close();
+		} else
+		{
+			inputFile = args[0];
+			fileName = args[1];
+		}
 		Buffer buffer = new Buffer();
 		
 		PipedOutputStream out = new PipedOutputStream();

@@ -59,6 +59,36 @@ public class WriterResults extends ReadImage implements Runnable {
 		// TODO Auto-generated method stub
 		thread.start();
 	}
+
+	public DataInputStream getIn() {
+		return in;
+	}
+
+	public void setIn(DataInputStream in) {
+		this.in = in;
+	}
+
+	public String getOutputFileName() {
+		return outputFileName;
+	}
+
+	public void setOutputFileName(String outputFileName) {
+		this.outputFileName = outputFileName;
+	}
+
+	public void setImg(ConvertToGrayscale img) {
+		this.img = img;
+	}
+
+	public Thread getThread() {
+		return thread;
+	}
+
+	public void setThread(Thread thread) {
+		this.thread = thread;
+	}
+	
+	
 	
 
 }

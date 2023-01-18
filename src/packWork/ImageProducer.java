@@ -31,4 +31,20 @@ public class ImageProducer extends Thread {
 		}
 	}
 
+	public Image getImg() {
+		return img;
+	}
+
+	public void setImg(Image img) {
+		this.img = img;
+	}
+
+	public Buffer getBuffer() {
+		return buffer;
+	}
+
+	public void setBuffer(Buffer buffer) {
+		this.buffer = buffer;
+	}
+	
 }

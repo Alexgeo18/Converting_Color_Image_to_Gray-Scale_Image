@@ -50,6 +50,50 @@ public class ImageConsumer extends Thread implements Serializable{
 			e.printStackTrace();
 		}
 	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public ConvertToGrayscale getObj() {
+		return obj;
+	}
+
+	public void setObj(ConvertToGrayscale obj) {
+		this.obj = obj;
+	}
+
+	public BufferedImage[] getImageQuarters() {
+		return imageQuarters;
+	}
+
+	public void setImageQuarters(BufferedImage[] imageQuarters) {
+		this.imageQuarters = imageQuarters;
+	}
+
+	public Buffer getBuffer() {
+		return buffer;
+	}
+
+	public void setBuffer(Buffer buffer) {
+		this.buffer = buffer;
+	}
+
+	public DataOutputStream getOos() {
+		return oos;
+	}
+
+	public void setOos(DataOutputStream oos) {
+		this.oos = oos;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 	
 
 }

@@ -37,8 +37,16 @@ public class ReadImage extends Image implements ReadImageInterface {
 		}
 			return image;
 	}
-		
 
+	public BufferedImage getImg() {
+		return img;
+	}
+
+	public void setImg(BufferedImage img) {
+		this.img = img;
+	}
+		
+	
 
 
 }
